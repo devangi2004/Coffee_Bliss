@@ -93,7 +93,7 @@ No server or installation required.
 Created as a frontend web development project.
 
 ---
-```
+
 ## 📄 License
 
 This project is free to use for educational and personal purposes.
