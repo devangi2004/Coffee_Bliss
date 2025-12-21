@@ -35,7 +35,7 @@ This project is suitable for **college submissions, portfolios, and frontend pra
 
 ## 📁 Project Structure
 
-```
+
 ```
 coffee-bliss/
 │── index.html
