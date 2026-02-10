@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3e1c7;
+  color: #3e2723;
+}
+
+/* HEADER */
+header {
+  background: #3e2723;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.cart {
+  cursor: pointer;
+  color: #ffcc80;
+  font-weight: bold;
+}
+
+
+
+/* HERO */
+#hero {
+  height: 80vh;
+  background: linear-gradient(#00000088, #00000088),
+              url("img/hero.jpg") center/cover;
+  color: #ffcc80;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero a {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ffcc80;
+  color: #3e2723;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* MENU */
+#menu {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.filters button {
+  margin: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background: #cfa15d;
+  cursor: pointer;
+}
+
+.menu-grid {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.menu-item {
+  background: #e0b893;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #c62828;
+  color: white;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  border-radius: 20px;
+}
+
+.add-cart {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  background: #3e2723;
+  color: white;
+  cursor: pointer;
+}
+
+/* CART PANEL */
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 300px;
+  height: 100vh;
+  background: #fff3e0;
+  padding: 20px;
+  box-shadow: -3px 0 10px rgba(0,0,0,0.3);
+  transition: right 0.3s;
+  z-index: 2000;
+}
+
+.cart-panel.active {
+  right: 0;
+}
+
+#cartItems li {
+  list-style: none;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.close-cart {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  background: #3e2723;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* CONTACT */
+/* CONTACT SECTION */
+#contact {
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #6f4e37, #4e342e);
+  color: #fff;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+#contact p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #f3e1c7;
+}
+
+/* CONTACT FORM CARD */
+#contact form {
+  max-width: 520px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* INPUTS */
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #cfa15d;
+  box-shadow: 0 0 0 2px rgba(207, 161, 93, 0.3);
+}
+
+/* BUTTON */
+#contact button {
+  padding: 14px;
+  background: linear-gradient(135deg, #cfa15d, #ffcc80);
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3e2723;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#contact button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  #contact h2 {
+    font-size: 1.8rem;
+  }
+
+  #contact form {
+    padding: 22px;
+  }
+}
+    
+
+/* FOOTER */
+footer {
+  background: #2c1b18;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
